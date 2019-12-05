@@ -40,12 +40,7 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(name) {
-  id: 216;
-  name:'Britney';
-  email:'brit@britney.com';
-}
-console.log(makePersonobject{});
+function makePersonObject(name) {}
 
 
 /**
@@ -176,9 +171,13 @@ function getLastCarInfo() {
  * For example, if getCarInfoById is invoked with the inventory and the number 1,
  * it will return `This is a Lincoln Navigator`.
 */
-function getCarInfoById(/* code here */) {
-  /* code here */
-}
+function getCarInfoById(array, id) {
+  for(let i-0; i<array.length; ++i){
+    {
+    if (array[i].id===id)
+    return `This is a ${array[i].car_make ${array[i].car_model}`
+  }
+  }
 
 /**
  * ### Challenge `sortCarInventory`
@@ -254,9 +253,20 @@ function getGermanCars(/* code here */) {
  *   return num * 2
  * }
 */
-const sum = null; // code here!
-const addFive = null; // code here!
-const argTimesTwo = null; // code here!
+//const sum = null;
+const sum = (a, b) => {
+  return a + b
+}
+
+//const addFive = null; 
+const addFive = (num) => {
+  return num + 5
+}
+
+//const argTimesTwo = null; 
+const argTimesTwo = (num) => {
+  return num * 2
+}
 
 /**
  * ### Challenge `carMaker`
