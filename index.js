@@ -40,8 +40,14 @@ function addNumbers(num1, num2) {
  *   email: "leia@leia.com",
  * }
 */
-function makePersonObject(name) {}
-
+function makePersonObject(id, name, email) {
+  return {
+    id: id,
+    name: name,
+    email: email
+  };
+};
+console.log(makePersonObject(216, "Britney", "britney@email.com"));
 
 /**
  * ### Challenge `getName`
@@ -156,7 +162,6 @@ function getCarInfoByIndex(inventory, index) {
  * it will return `This is a Lincoln Town Car`.
 */
 function getLastCarInfo() {
- 
 }
 
 /**
@@ -172,12 +177,12 @@ function getLastCarInfo() {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoById(array, id) {
-  for(let i-0; i<array.length; ++i){
+  for(let i=0; i<array.length; ++i)
     {
-    if (array[i].id===id)
-    return `This is a ${array[i].car_make ${array[i].car_model}`
+    if (array[i].id===id) {
+    return `This is a ${array[i].car_make} ${array[i].car_model}`}
   }
-  }
+}
 
 /**
  * ### Challenge `sortCarInventory`
@@ -233,7 +238,7 @@ function getOlderCars(/* code here */) {
 */
 function getGermanCars(/* code here */) {
   /* code here */
-}
+} 
 
 /**
  * ### Challenge refactor to arrow functions
